@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "cameron-irons-website",
   "resources": {
-    "hash": "sha256-Z+lGniMub6iiP1ZX+Zg2k2GeyTQQA2wTMLkBKJ4qh/s=",
+    "hash": "sha256-b5BaPBlA0Y33N5sQcvHIZ65EaxxIEEVJUo4ty1Ik9xo=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.gq23rahbum.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.kk052fg825.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -36,7 +36,7 @@
       "System.Text.Json.nfx6s832ck.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.5gjltihx5v.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.qn00ia5owd.wasm": "System.Private.CoreLib.wasm",
-      "cameron-irons-website.mn9zn1oevp.wasm": "cameron-irons-website.wasm",
+      "cameron-irons-website.peam6pt5if.wasm": "cameron-irons-website.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.l4ptthxatg.js": "dotnet.native.js",
       "dotnet.native.d2w7colv7e.wasm": "dotnet.native.wasm",
@@ -95,9 +95,10 @@
       "System.Text.Encodings.Web.9rjk8as0i7.wasm": "sha256-+y7W1KnwkH6Qwrz33TSxWAn666Cbuzvn6QwDB/OpQgI=",
       "System.Text.Json.nfx6s832ck.wasm": "sha256-PaUiTGEAWpmpBoNQBQG4G044wn6I9CKQKZKVBLBsY2w=",
       "System.Text.RegularExpressions.5gjltihx5v.wasm": "sha256-tWq9vht0rY9iM6tvHI4CaV2Nogm0sR+EJEOy72TVrIk=",
-      "cameron-irons-website.mn9zn1oevp.wasm": "sha256-ojZ1xau00CsV3J3OH9gRQySGGVqs/Vsli76qMTa2sxw="
+      "cameron-irons-website.peam6pt5if.wasm": "sha256-MbhtH0rAsdsWoxQryiZe0NmYcJhtJmb+1IRRwuos9vM="
     }
   },
+  "cacheBootResources": true,
   "debugLevel": 0,
   "linkerEnabled": true,
   "globalizationMode": "sharded",
