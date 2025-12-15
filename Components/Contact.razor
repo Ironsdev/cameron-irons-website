@@ -1,4 +1,5 @@
 @inject ISnackbar Snackbar
+@inject NavigationManager NavigationManager
 
 <MudContainer MaxWidth="MaxWidth.Large" Class="my-art-contact-container">
     <a id="contact"></a>
@@ -39,8 +40,9 @@
                 <MudTextField @bind-Value="contactModel.Message" Label="Your Message" Variant="Variant.Text" Lines="6"
                     Required="true" RequiredError="Message cannot be empty" Class="mb-6" />
 
-                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary"
-                    Size="Size.Large" FullWidth="true">
+                <MudButton
+                    Href="@($"mailto:cameronirons22@gmail.com?subject={contactModel.Subject}&body={contactModel.Message}")"
+                    Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true">
                     Send Message
                 </MudButton>
             </MudForm>
@@ -54,13 +56,9 @@
 
     private async Task OnValidSubmit()
     {
-        // Replace this with your backend API call to send the email
-        await Task.Delay(500);
         Snackbar.Add("Message sent successfully!", Severity.Success);
-
         // Reset the form
         contactModel = new ContactModel();
-        form.ResetValidation();
     }
 
     // Basic email validation helper

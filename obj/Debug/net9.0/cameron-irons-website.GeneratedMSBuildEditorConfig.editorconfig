@@ -31,6 +31,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/irondev/Developer/Web/cameron-irons-website/Components/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/irondev/Developer/Web/cameron-irons-website/Components/Work.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Xb3JrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,10 +46,6 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/irondev/Developer/Web/cameron-irons-website/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/irondev/Developer/Web/cameron-irons-website/Components/Contact.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-r3uklgb4co
 
 [/Users/irondev/Developer/Web/cameron-irons-website/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
