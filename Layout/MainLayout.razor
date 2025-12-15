@@ -1,7 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
 @* Required *@
-<MudThemeProvider Theme=_mainTheme/>
+<MudThemeProvider Theme=_mainTheme />
 <MudPopoverProvider />
 
 @* Needed for dialogs *@
@@ -11,11 +11,6 @@
 <MudSnackbarProvider />
 
 <div class="page">
-<MudAppBar Color="Color.Transparent" Dense Elevation="0" Fixed="false">
-    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
-    <MudSpacer />
-    <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" />
-</MudAppBar>
     <main>
         <article class="content px-4">
             @Body
@@ -38,7 +33,7 @@
             TextDisabled = "rgba(0,0,0, 0.38)",
             Dark = "#433633",
             Surface = "#F7F0F5",
-            Background = "#f5f5f5",
+            Background = "#e6e8e7",
             @* AppbarBackground = "#1976d2",
             DrawerBackground = "#ffffff",
             DrawerText = "rgba(0,0,0, 0.7)",

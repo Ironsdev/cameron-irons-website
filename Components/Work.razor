@@ -1,0 +1,70 @@
+<MudGrid Spacing="1" Style="padding: 20px;" Justify="Justify.Center">
+    <a id="work"></a>
+    <MudItem>
+        <MudPaper Height="850px" Width="1000px">
+            <MudText Typo="Typo.h2" Color="Color.Primary" Align="Align.Center"
+                Style="padding: 20px; font-family: 'TitleFont';">
+                Work
+            </MudText>
+            <MudList T="string">
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/pop_chair_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Popsicle Stick Chair
+                    </MudText>
+                </MudListItem>
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/office_space_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Office Workspace Design
+                    </MudText>
+                </MudListItem>
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/ouro_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Ouroburos Wallpaper
+                    </MudText>
+                </MudListItem>
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/color_study_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Color Study Book
+                    </MudText>
+                </MudListItem>
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/finkbine_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Finkbine Clock Tower
+                    </MudText>
+                </MudListItem>
+                <MudListItem>
+                    <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/farns_fixed.png"))"
+                        Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                        Farnsworth House Recreation
+                    </MudText>
+                    <MudListItem>
+                        <MudText Typo="Typo.h4" @onmouseover="@(() => UpdateImage("images/egg_chair_fixed.png"))"
+                            Color="Color.Primary" Align="Align.Center" Style="padding: 20px; font-family: 'BodyFont';">
+                            Arne Jacobsen Egg Chair
+                        </MudText>
+                    </MudListItem>
+                </MudListItem>
+            </MudList>
+        </MudPaper>
+    </MudItem>
+    <MudItem>
+        <MudPaper Height="850px" Width="1000px">
+            <MudImage Src="@CurrentImageUrl" ObjectFit="ObjectFit.Contain" Width="1000" Height="850" Alt="Dynamic Image"
+                Fluid="true" />
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private string CurrentImageUrl = "images/pop_chair.png"; // Default image source
+    private void UpdateImage(string imageUrl)
+    {
+        CurrentImageUrl = imageUrl;
+        // StateHasChanged() is automatically called in most event handlers in Blazor components
+    }
+}

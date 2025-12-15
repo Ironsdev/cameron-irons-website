@@ -1,0 +1,34 @@
+/* Container holds the two halves side-by-side */
+.my-art-contact-container[b-r3uklgb4co] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Keeps the grid inside the rounded corners */
+}
+
+/* Left panel style (customize colors to match your art palette) */
+.art-text-section[b-r3uklgb4co] {
+    background-color: #f5f5f5;
+    /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+}
+
+/* Right panel (form) style */
+.form-section[b-r3uklgb4co] {
+    background-color: #ffffff;
+}
+
+/* Custom styles for the artistic inputs (bottom border only) */
+/* This targets the input fields specifically within the form-section */
+.form-section .mud-input-control.mud-variant-text .mud-input[b-r3uklgb4co] {
+    border-bottom: 1px solid var(--mud-palette-divider);
+}
+
+.form-section .mud-input-control.mud-variant-text.mud-focused .mud-input[b-r3uklgb4co] {
+    border-bottom: 2px solid var(--mud-palette-primary);
+    /* Highlight color on focus */
+}

@@ -1,6 +1,7 @@
 .background-container {
     position: relative;
-    height: 100vh; /* Set a height for the container */
+    height: 100vh;
+    /* Set a height for the container */
     width: 100%;
 }
 
@@ -13,17 +14,24 @@
     background-image: url('images/mat_board.png');
     background-size: cover;
     background-position: center;
-    filter: blur(0.00px); /* Apply the blur to the background div */
-    z-index: -1; /* Puts the background layer behind the content */
+    filter: blur(0.0px);
+    /* Apply the blur to the background div */
+    z-index: -1;
+    /* Puts the background layer behind the content */
 }
 
 .content-overlay {
-    position: relative; /* Keeps content above the background layer */
+    position: relative;
+    /* Keeps content above the background layer */
     z-index: 1;
-    color: white; /* Example styles for content on top */
+    color: white;
+    /* Example styles for content on top */
     padding: 20px;
     /* Optional: Add a semi-transparent background color to the overlay itself for better readability */
-    background-color: rgba(0, 0, 0, 0.0); 
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 100vh;
+    /* Set a height for the container */
+    width: 100%;
 }
 
 @font-face {
@@ -31,6 +39,7 @@
     src: url('../fonts/Notable-Regular.ttf') format('truetype');
     /* Add other formats (woff, woff2) for full browser compatibility */
 }
+
 @font-face {
     font-family: 'TitleFont2';
     src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');

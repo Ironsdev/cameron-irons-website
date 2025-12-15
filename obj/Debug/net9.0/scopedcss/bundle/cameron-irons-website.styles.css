@@ -1,7 +1,43 @@
+/* /Components/Contact.razor.rz.scp.css */
+/* Container holds the two halves side-by-side */
+.my-art-contact-container[b-r3uklgb4co] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Keeps the grid inside the rounded corners */
+}
+
+/* Left panel style (customize colors to match your art palette) */
+.art-text-section[b-r3uklgb4co] {
+    background-color: #f5f5f5;
+    /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+}
+
+/* Right panel (form) style */
+.form-section[b-r3uklgb4co] {
+    background-color: #ffffff;
+}
+
+/* Custom styles for the artistic inputs (bottom border only) */
+/* This targets the input fields specifically within the form-section */
+.form-section .mud-input-control.mud-variant-text .mud-input[b-r3uklgb4co] {
+    border-bottom: 1px solid var(--mud-palette-divider);
+}
+
+.form-section .mud-input-control.mud-variant-text.mud-focused .mud-input[b-r3uklgb4co] {
+    border-bottom: 2px solid var(--mud-palette-primary);
+    /* Highlight color on focus */
+}
 /* /Pages/Home.razor.rz.scp.css */
 .background-container[b-4o6sy0gkq7] {
     position: relative;
-    height: 100vh; /* Set a height for the container */
+    height: 100vh;
+    /* Set a height for the container */
     width: 100%;
 }
 
@@ -14,17 +50,24 @@
     background-image: url('images/mat_board.png');
     background-size: cover;
     background-position: center;
-    filter: blur(0.00px); /* Apply the blur to the background div */
-    z-index: -1; /* Puts the background layer behind the content */
+    filter: blur(0.0px);
+    /* Apply the blur to the background div */
+    z-index: -1;
+    /* Puts the background layer behind the content */
 }
 
 .content-overlay[b-4o6sy0gkq7] {
-    position: relative; /* Keeps content above the background layer */
+    position: relative;
+    /* Keeps content above the background layer */
     z-index: 1;
-    color: white; /* Example styles for content on top */
+    color: white;
+    /* Example styles for content on top */
     padding: 20px;
     /* Optional: Add a semi-transparent background color to the overlay itself for better readability */
-    background-color: rgba(0, 0, 0, 0.0); 
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 100vh;
+    /* Set a height for the container */
+    width: 100%;
 }
 
 @font-face {
@@ -32,6 +75,7 @@
     src: url('../fonts/Notable-Regular.ttf') format('truetype');
     /* Add other formats (woff, woff2) for full browser compatibility */
 }
+
 @font-face {
     font-family: 'TitleFont2';
     src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');

@@ -1,17 +1,33 @@
 ﻿@page "/"
 
-@* <MudImage Src="images/mat_board.png" Alt="Mony the dog" Elevation="25" Class="rounded-lg"/> *@
+<MudAppBar Color="Color.Transparent" Dense Elevation="0" Fixed="false">
+    <MudSpacer />
+    <MudStack Row>
+        <button type="button" Typo onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+            <MudText Typo="Typo.h4" Color="Color.Secondary">Work</MudText>
+        </button>
+        <button type="button" Typo onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            <MudText Typo="Typo.h4" Color="Color.Secondary">Contact</MudText>
+        </button>
+    </MudStack>
+</MudAppBar>
 <div class="background-container">
     <div class="background-image-blurred"></div>
     <div class="content-overlay">
         <!-- Your sharp content goes here -->
-
-        <MudStack Row>
-        <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont';" GutterBottom="true">Cameron</MudText>
-        <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont2';padding-top:20px" GutterBottom="true">Irons</MudText>
-        <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont';" GutterBottom="true">Art</MudText>
-        </MudStack>
-        @* <MudText Typo="Typo.h5" Color="Color.Tertiary" GutterBottom="true">Digital Artist & Illustrator</MudText> *@
-     
+        <MudCard Color="Color.Dark" Elevation="25" Class="rounded-lg pa-6"
+            Style="margin-top: 20px; background-color: rgba(48, 44, 44, 0.8);">
+            <MudStack Row>
+                <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont';" GutterBottom="true">
+                    Cameron</MudText>
+                <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont2';padding-top:20px"
+                    GutterBottom="true">Irons</MudText>
+                <MudText Typo="Typo.h1" Color="Color.Tertiary" Style="font-family: 'TitleFont';" GutterBottom="true">Art
+                </MudText>
+            </MudStack>
+            <MudText Typo="Typo.h5" Color="Color.Tertiary" GutterBottom="true">Designer & Digital Artist</MudText>
+        </MudCard>
     </div>
+    <Work />
+    <Contact />
 </div>
