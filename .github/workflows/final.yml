@@ -35,7 +35,7 @@ jobs:
         uses: na1307/blazor-github-pages@v4
         id: prepare
         with:
-          project-path: cameron-irons-website/cameron-irons-website.csproj
+          project-path: cameron-irons-website.csproj
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
