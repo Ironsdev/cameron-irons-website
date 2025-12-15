@@ -1,0 +1,38 @@
+.background-container[b-4o6sy0gkq7] {
+    position: relative;
+    height: 100vh; /* Set a height for the container */
+    width: 100%;
+}
+
+.background-image-blurred[b-4o6sy0gkq7] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/mat_board.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.00px); /* Apply the blur to the background div */
+    z-index: -1; /* Puts the background layer behind the content */
+}
+
+.content-overlay[b-4o6sy0gkq7] {
+    position: relative; /* Keeps content above the background layer */
+    z-index: 1;
+    color: white; /* Example styles for content on top */
+    padding: 20px;
+    /* Optional: Add a semi-transparent background color to the overlay itself for better readability */
+    background-color: rgba(0, 0, 0, 0.0); 
+}
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/Notable-Regular.ttf') format('truetype');
+    /* Add other formats (woff, woff2) for full browser compatibility */
+}
+@font-face {
+    font-family: 'TitleFont2';
+    src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
+    /* Add other formats (woff, woff2) for full browser compatibility */
+}
