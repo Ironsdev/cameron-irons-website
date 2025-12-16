@@ -1,12 +1,15 @@
 ﻿@page "/"
 
+@inject NavigationManager _navigationManager
+
 <MudAppBar Color="Color.Transparent" Dense Elevation="0" Fixed="false">
+    <MudStack></MudStack>
     <MudSpacer />
     <MudStack Row>
-        <button type="button" Typo onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+        <button type="button" @onclick="() => NavigateToSelectedWork()">
             <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Secondary">Work</MudText>
         </button>
-        <button type="button" Typo onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <button type="button" Typo @onclick="() => NavigateToContact()">
             <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Secondary">Contact</MudText>
         </button>
     </MudStack>
@@ -29,5 +32,17 @@
         </MudCard>
     </div>
     <Work />
-    <Contact />
+    <ContactForm />
+    <Footer />
 </div>
+
+@code {
+    private void NavigateToSelectedWork()
+    {
+        _navigationManager.NavigateTo("/SelectedWork");
+    }
+    private void NavigateToContact()
+    {
+        _navigationManager.NavigateTo("/Contact");
+    }
+}

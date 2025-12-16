@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cameron-irons-website")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb403439e09f78ebf4802a114b2422361118a1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f136d8f985bae14d843d3bf0536b93263a136d30")]
 [assembly: System.Reflection.AssemblyProductAttribute("cameron-irons-website")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cameron-irons-website")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

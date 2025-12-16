@@ -1,0 +1,37 @@
+@page "/SelectedWork/eggchair"
+@inherits LayoutComponentBase
+
+@using MudBlazor.Utilities
+
+<DefaultAppBar />
+
+<div class="app-layout-container">
+
+    @* We use a single wrapper div for the content so the padding class works correctly *@
+    <div class="right-content-padding">
+
+        @* Left Panel: This panel uses position: fixed. It is OUTSIDE the grid flow slightly now for clarity *@
+        <div class="fixed-desktop-left">
+            <MudPaper Class="pa-4 d-flex flex-column justify-center align-center" Elevation="0" Height="100vh">
+                <MudText Color="Color.Dark" Typo="Typo.h5" Style="font-family: TitleFont2">
+                    Egg Chair Design
+                </MudText>
+                <MudText Color="Color.Primary" Typo="Typo.h4" Style="font-family: TitleFont2" Class="mt-2">
+                    University Of Iowa
+                </MudText>
+                <MudText Typo="Typo.h6" Style="font-family: Garamond" Align="Align.Center">
+                    The Egg Chair Recreation is a design project that pays homage to the iconic piece by Arne Jacobsen,
+                    renowned for its sculptural form and timeless elegance. This recreation explores the chair’s
+                    distinctive curvilinear silhouette and inviting comfort, emphasizing craftsmanship and attention to
+                    detail. Through this project, I aimed to capture the chair’s iconic presence while infusing it with
+                    a contemporary perspective, celebrating its enduring influence in modern interior design.
+                </MudText>
+            </MudPaper>
+        </div>y
+
+        @* Right Panel: The content that flows naturally *@
+        <MudPaper Class="pa-4" Square="true" Elevation="0">
+            <MudImage Src="images/office/office_client.png" Alt="Model Lineup" Style="max-width: 100%; height: auto;" />
+        </MudPaper>
+    </div>
+</div>

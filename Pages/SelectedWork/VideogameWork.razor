@@ -1,0 +1,39 @@
+@page "/SelectedWork/videogame"
+@inherits LayoutComponentBase
+
+@using MudBlazor.Utilities
+
+<DefaultAppBar />
+
+<div class="app-layout-container">
+
+    @* We use a single wrapper div for the content so the padding class works correctly *@
+    <div class="right-content-padding">
+
+        @* Left Panel: This panel uses position: fixed. It is OUTSIDE the grid flow slightly now for clarity *@
+        <div class="fixed-desktop-left">
+            <MudPaper Class="pa-4 d-flex flex-column justify-center align-center" Elevation="0" Height="100vh">
+                <MudText Color="Color.Dark" Typo="Typo.h5" Style="font-family: TitleFont2">
+                    Video Game Assets
+                </MudText>
+                <MudText Color="Color.Primary" Typo="Typo.h4" Style="font-family: TitleFont2" Class="mt-2">
+                    Irons Development
+                </MudText>
+                <MudText Typo="Typo.h6" Style="font-family: Garamond" Align="Align.Center">
+                    This video game project involves the creation of pixel art assets for a turn-based RPG,
+                    utilizing a fixed color palette to ensure visual consistency and cohesive style throughout the game.
+                    Through careful attention to detail and color harmony, I designed characters, environments, and
+                    interface elements that enhance the immersive experience while maintaining a unified aesthetic. This
+                    project highlights my ability to work within constraints, leveraging limited colors to craft
+                    vibrant, engaging assets that bring the game world to life.
+                </MudText>
+            </MudPaper>
+        </div>
+
+        @* Right Panel: The content that flows naturally *@
+        <MudPaper Class="pa-4" Square="true" Elevation="0">
+            <MudImage Src="images/videogame/start_screen.png" Alt="Start Screen"
+                Style="max-width: 100%; height: auto;" />
+        </MudPaper>
+    </div>
+</div>

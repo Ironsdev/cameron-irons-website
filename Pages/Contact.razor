@@ -1,0 +1,40 @@
+@page "/Contact"
+
+@inject NavigationManager _navigationManager
+
+<MudAppBar Color="Color.Success" Dense Elevation="0" Fixed="false">
+    <button type="button" @onclick="() => NavigateToHome()">
+        <MudStack Row Spacing="0">
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont';" GutterBottom="true">
+                Cameron</MudText>
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont2';padding-top:4px"
+                GutterBottom="true">Irons</MudText>
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont';" GutterBottom="true">Art
+            </MudText>
+        </MudStack>
+    </button>
+    <MudSpacer />
+    <MudStack Row>
+        <button type="button" @onclick="() => NavigateToSelectedWork()">
+            <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Secondary">Work</MudText>
+        </button>
+        <button type="button" Typo>
+            <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Tertiary">Contact</MudText>
+        </button>
+    </MudStack>
+</MudAppBar>
+<div class="background-container">
+    <ContactForm />
+</div>
+<Footer />
+
+@code {
+    private void NavigateToHome()
+    {
+        _navigationManager.NavigateTo("/");
+    }
+    private void NavigateToSelectedWork()
+    {
+        _navigationManager.NavigateTo("/SelectedWork");
+    }
+}

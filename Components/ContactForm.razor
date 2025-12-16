@@ -1,0 +1,77 @@
+@inject ISnackbar Snackbar
+@inject NavigationManager NavigationManager
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="my-art-contact-container">
+    <MudGrid Spacing="0">
+        @* Left Side: Artistic Call-to-Action (Visible on Medium screens and up) *@
+        <MudItem xs="12" md="6" Class="art-text-section d-none d-md-flex flex-column pa-6">
+            <MudText Typo="Typo.h3" Class="mb-4">Let's Connect.</MudText>
+            <MudText Typo="Typo.subtitle1">
+                Whether it's a commission, collaboration, or if you just want to say hello, I'd love to hear from you.
+            </MudText>
+            <MudSpacer />
+            <div class="social-links">
+                <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Href="https://github.com" Target="_blank"
+                    Color="Color.Inherit" Edge="Edge.Start" />
+                <MudIconButton Icon="@Icons.Custom.Brands.Instagram" Href="https://instagram.com" Target="_blank"
+                    Color="Color.Inherit" />
+                <MudIconButton Icon="@Icons.Custom.Brands.Twitter" Href="https://twitter.com" Target="_blank"
+                    Color="Color.Inherit" />
+            </div>
+        </MudItem>
+
+        @* Right Side: The Form *@
+        <MudItem xs="12" md="6" Class="form-section pa-8">
+            <MudForm Model="@contactModel" OnValidSubmit="@OnValidSubmit" @ref="@form">
+                <MudText Typo="Typo.h5" Class="mb-6">Send a Message</MudText>
+
+                <MudTextField @bind-Value="contactModel.Name" Label="Full Name" Variant="Variant.Text" Required="true"
+                    RequiredError="Name is required" Class="mb-6" />
+
+                <MudTextField @bind-Value="contactModel.Email" Label="E-mail" Variant="Variant.Text"
+                    InputType="InputType.Email" Validation="@(new Func<string, string>(EmailValidation))"
+                    Required="true" RequiredError="Email is required" Class="mb-6" />
+
+                <MudTextField @bind-Value="contactModel.Subject" Label="Subject" Variant="Variant.Text" Required="true"
+                    RequiredError="Subject is required" Class="mb-6" />
+
+                <MudTextField @bind-Value="contactModel.Message" Label="Your Message" Variant="Variant.Text" Lines="6"
+                    Required="true" RequiredError="Message cannot be empty" Class="mb-6" />
+
+                <MudButton
+                    Href="@($"mailto:cameronirons22@gmail.com?subject={contactModel.Subject}&body={contactModel.Message}")"
+                    Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true">
+                    Send Message
+                </MudButton>
+            </MudForm>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    private ContactModel contactModel = new ContactModel();
+    private MudForm form;
+
+    private async Task OnValidSubmit()
+    {
+        Snackbar.Add("Message sent successfully!", Severity.Success);
+        // Reset the form
+        contactModel = new ContactModel();
+    }
+
+    // Basic email validation helper
+    private string EmailValidation(string email)
+    {
+        if (string.IsNullOrWhiteSpace(email)) return "Email is required!";
+        if (!System.Text.RegularExpressions.Regex.IsMatch(email, @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$")) return "Invalid email format.";
+        return null;
+    }
+
+    public class ContactModel
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Subject { get; set; }
+        public string Message { get; set; }
+    }
+}

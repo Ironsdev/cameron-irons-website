@@ -1,3 +1,8 @@
+/* /Pages/Contact.razor.rz.scp.css */
+.background-container[b-2acbolg8ih] {
+    background-color: white;
+    height: 100vh;
+}
 /* /Pages/Home.razor.rz.scp.css */
 .background-container[b-4o6sy0gkq7] {
     position: relative;
@@ -45,4 +50,8 @@
     font-family: 'TitleFont2';
     src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
     /* Add other formats (woff, woff2) for full browser compatibility */
+}
+/* /Pages/SelectedWork/SelectedWork.razor.rz.scp.css */
+.background-container[b-z7h9vogxqn] {
+    background-color: white;
 }

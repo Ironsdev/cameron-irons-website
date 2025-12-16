@@ -1,0 +1,39 @@
+@page "/SelectedWork/workspace"
+@inherits LayoutComponentBase
+
+@using MudBlazor.Utilities
+
+<DefaultAppBar />
+
+<div class="app-layout-container">
+
+    @* We use a single wrapper div for the content so the padding class works correctly *@
+    <div class="right-content-padding">
+
+        @* Left Panel: This panel uses position: fixed. It is OUTSIDE the grid flow slightly now for clarity *@
+        <div class="fixed-desktop-left">
+            <MudPaper Class="pa-4 d-flex flex-column justify-center align-center" Elevation="0" Height="100vh">
+                <MudText Color="Color.Dark" Typo="Typo.h5" Style="font-family: TitleFont2">
+                    Office Workspace Design
+                </MudText>
+                <MudText Color="Color.Primary" Typo="Typo.h4" Style="font-family: TitleFont2" Class="mt-2">
+                    University Of Iowa
+                </MudText>
+                <MudText Typo="Typo.h6" Style="font-family: Garamond" Align="Align.Center">
+                    The Office Workspace design is a thoughtfully crafted interior that balances functionality with
+                    aesthetic appeal, creating an environment conducive to productivity and collaboration. Utilizing a
+                    modern palette, flexible furniture, and innovative spatial arrangements, this project emphasizes
+                    comfort, efficiency, and inspiration. The design incorporates natural light, ergonomic elements, and
+                    personalized touches to foster a welcoming atmosphere, transforming a typical office space into a
+                    dynamic setting that supports both individual focus and team interaction.
+                </MudText>
+            </MudPaper>
+        </div>
+
+        @* Right Panel: The content that flows naturally *@
+        <MudPaper Class="pa-4" Square="true" Elevation="0">
+            <MudImage Src="images/office/office_client.png" Alt="Model Lineup" Style="max-width: 100%; height: auto;" />
+            <MudImage Src="images/office/office_layout.png" Alt="Model Lineup" Style="max-width: 100%; height: auto;" />
+        </MudPaper>
+    </div>
+</div>

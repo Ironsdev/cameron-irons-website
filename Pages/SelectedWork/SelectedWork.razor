@@ -1,0 +1,109 @@
+@page "/SelectedWork"
+
+@inject NavigationManager _navigationManager
+
+<MudAppBar Color="Color.Success" Dense Elevation="0" Fixed="false">
+    <button type="button" @onclick="() => NavigateToHome()">
+        <MudStack Row Spacing="0">
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont';" GutterBottom="true">
+                Cameron</MudText>
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont2';padding-top:4px"
+                GutterBottom="true">Irons</MudText>
+            <MudText Typo="Typo.h6" Color="Color.Secondary" Style="font-family: 'TitleFont';" GutterBottom="true">Art
+            </MudText>
+        </MudStack>
+    </button>
+    <MudSpacer />
+    <MudStack Row>
+        <button type="button">
+            <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Tertiary">Work</MudText>
+        </button>
+        <button type="button" Typo @onclick="() => NavigateToContact()">
+            <MudText Style="font-family: 'TitleFont';" Typo="Typo.h4" Color="Color.Secondary">Contact</MudText>
+        </button>
+    </MudStack>
+</MudAppBar>
+<div class="background-container">
+    <MudText Typo="Typo.h2" Color="Color.Primary" Align="Align.Center"
+        Style="padding: 20px; font-family: 'TitleFont2';">
+        Selected Work
+    </MudText>
+    <MudGrid Spacing="5" Justify="Justify.Center">
+        <MudItem>
+            <MudImage @onclick="() => NavigateToPopsicle()" Src="images/work/pop_chair_work.png"
+                Alt="Popsicle Stick Chair" Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToWorkspace()" Src="images/work/workplace_work.png"
+                Alt="Office Workspace Design" Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToOuro()" Src="images/work/ouro_work.png" Alt="Ouroboros Wallpaper"
+                Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToColorbook()" Src="images/work/colorbook_work.png" Alt="Colorbook"
+                Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToClocktower()" Src="images/work/clocktower_work.png" Alt="Clocktower"
+                Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToEggChair()" Src="images/work/egg_chair_work.png" Alt="Egg Chair"
+                Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToFarnsworth()" Src="images/work/farnsworth_work.png" Alt="Farnsworth"
+                Height="600" Width="420" />
+        </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToVideogame()" Src="images/work/videogame_work.png" Alt="VideoGame"
+                Height="600" Width="420" />
+        </MudItem>
+    </MudGrid>
+</div>
+<Footer />
+
+@code {
+    private void NavigateToHome()
+    {
+        _navigationManager.NavigateTo("/");
+    }
+    private void NavigateToContact()
+    {
+        _navigationManager.NavigateTo("/Contact");
+    }
+    private void NavigateToPopsicle()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/popsicle");
+    }
+    private void NavigateToWorkspace()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/workspace");
+    }
+    private void NavigateToOuro()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/ouro");
+    }
+    private void NavigateToColorbook()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/colorbook");
+    }
+    private void NavigateToClocktower()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/clocktower");
+    }
+    private void NavigateToEggChair()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/eggchair");
+    }
+    private void NavigateToFarnsworth()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/farnsworth");
+    }
+    private void NavigateToVideogame()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/videogame");
+    }
+}

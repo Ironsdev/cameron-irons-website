@@ -31,8 +31,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/irondev/Developer/Web/cameron-irons-website/Components/Contact.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0LnJhem9y
+[/Users/irondev/Developer/Web/cameron-irons-website/Components/ContactForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0Rm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Components/DefaultAppBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EZWZhdWx0QXBwQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/irondev/Developer/Web/cameron-irons-website/Components/Work.razor]
@@ -43,10 +51,50 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/ClocktowerWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL0Nsb2NrdG93ZXJXb3JrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/ColorbookWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL0NvbG9yYm9va1dvcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/EggChairWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL0VnZ0NoYWlyV29yay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/FarnsworthWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL0Zhcm5zd29ydGhXb3JrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/OuroWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL091cm9Xb3JrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/PopsicleWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL1BvcHNpY2xlV29yay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/VideogameWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL1ZpZGVvZ2FtZVdvcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/WorkspaceWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL1dvcmtzcGFjZVdvcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/irondev/Developer/Web/cameron-irons-website/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2acbolg8ih
+
 [/Users/irondev/Developer/Web/cameron-irons-website/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-4o6sy0gkq7
+
+[/Users/irondev/Developer/Web/cameron-irons-website/Pages/SelectedWork/SelectedWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsZWN0ZWRXb3JrL1NlbGVjdGVkV29yay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-z7h9vogxqn
