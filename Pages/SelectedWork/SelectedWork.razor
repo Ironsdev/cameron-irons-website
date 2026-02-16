@@ -61,6 +61,10 @@
             <MudImage @onclick="() => NavigateToVideogame()" Src="images/work/videogame_work.png" Alt="VideoGame"
                 Height="600" Width="420" />
         </MudItem>
+        <MudItem>
+            <MudImage @onclick="() => NavigateToAutocad()" Src="images/work/autocad_work.png" Alt="AutoCAD Work"
+                Height="600" Width="420" />
+        </MudItem>
     </MudGrid>
 </div>
 <Footer />
@@ -105,5 +109,9 @@
     private void NavigateToVideogame()
     {
         _navigationManager.NavigateTo("/SelectedWork/videogame");
+    }
+    private void NavigateToAutocad()
+    {
+        _navigationManager.NavigateTo("/SelectedWork/autocad");
     }
 }

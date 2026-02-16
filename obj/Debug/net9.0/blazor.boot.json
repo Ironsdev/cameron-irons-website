@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "cameron-irons-website",
   "resources": {
-    "hash": "sha256-39I0QRn/iopAlj2lGoWQwv0oNcAIkXN170Gmsa8ofJI=",
+    "hash": "sha256-koGR7KuC7tZUXV2lu9dVk2ownjXp6C9pJLdh0YSD1pY=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.50odlujk1g.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.nxuc56wpt2.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -204,8 +204,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "cameron-irons-website.nf0v869zjo.wasm": "cameron-irons-website.wasm",
-      "cameron-irons-website.6lwjtri0cb.pdb": "cameron-irons-website.pdb"
+      "cameron-irons-website.0smazgo1mz.wasm": "cameron-irons-website.wasm",
+      "cameron-irons-website.jqzauta6qp.pdb": "cameron-irons-website.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.l4ptthxatg.js": "sha256-ddUN4+taa/Qv7Mr8mLpunJO+0Xw3ViOqBvedhe57/hA="
@@ -418,10 +418,10 @@
       "WindowsBase.ahs9krftg4.wasm": "sha256-bgi2FHdT0ABsUP1yKQQ2AP8qfo1V/bS/4cJFE4OUHX8=",
       "mscorlib.k5iaovx9v7.wasm": "sha256-mEFLDERlY1HMNQHzh68xOPawXvI48O1fHW9PbfXugb4=",
       "netstandard.6sr1qvn64m.wasm": "sha256-Gpf+qEqCYaCB6zqI5sNPIurnfpwRtfcWksgf3CW6mHE=",
-      "cameron-irons-website.nf0v869zjo.wasm": "sha256-80OwrEtldRgjz9sjJejjkfN85Lbr/qOnnUKU5xkqw68="
+      "cameron-irons-website.0smazgo1mz.wasm": "sha256-0JSMxuis02JvFnyQPnfN6+vkGtGnePavVJ6vh9lp6yo="
     },
     "pdb": {
-      "cameron-irons-website.6lwjtri0cb.pdb": "sha256-utQLhUbuAdYtiX9/rNP9DXPkIrWXNm6r040ZXvQmOe0="
+      "cameron-irons-website.jqzauta6qp.pdb": "sha256-a2V3abkCyohhGYnJVEj92ZE2hJiemGy5pS6b+KJ2cTw="
     }
   },
   "cacheBootResources": true,
