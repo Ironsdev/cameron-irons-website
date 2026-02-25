@@ -1092,10 +1092,10 @@
 /Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/pd4adcg4qk-vpk9x04h4j.gz
 /Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/k0llclrzmv-vpk9x04h4j.gz
 /Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/kurayp3vkz-zaiuiwlmcq.gz
-/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.8ktjnnhpsy.wasm
-/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.v509dpdn4c.pdb
-/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.8ktjnnhpsy.wasm.gz
-/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.v509dpdn4c.pdb.gz
-/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/19wuofqh5q-8ktjnnhpsy.gz
-/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/rlmo7g7plp-v509dpdn4c.gz
-/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/nf2j3nyhf4-u0b95mp5jz.gz
+/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.ib1qxhsec0.wasm
+/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.6junzztn4p.pdb
+/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.ib1qxhsec0.wasm.gz
+/Users/irondev/Developer/Web/cameron-irons-website/bin/Debug/net9.0/wwwroot/_framework/cameron-irons-website.6junzztn4p.pdb.gz
+/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/19wuofqh5q-ib1qxhsec0.gz
+/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/rlmo7g7plp-6junzztn4p.gz
+/Users/irondev/Developer/Web/cameron-irons-website/obj/Debug/net9.0/compressed/nf2j3nyhf4-piminc6kmt.gz
